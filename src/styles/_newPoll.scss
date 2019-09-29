@@ -1,0 +1,117 @@
+@import './variables';
+
+.info{
+    opacity: 0.6;
+
+    &--active{
+        opacity: 1;
+        color: $primaryColor;
+    }
+}
+
+.link{
+    text-decoration: none;
+    color: $primaryColor;
+    cursor: pointer;
+    font-size: $mediumText/2;
+}
+
+.section{
+    width: 480px;
+
+    &--divider{
+        height: 1px;
+        background-color: $lightGray;
+    }
+}
+
+.txtLabel{
+    font-weight: 300;
+    font-size: $smallText;
+    opacity: 0.5;
+}
+textarea{
+    resize: none;
+    
+    &:focus{
+        border: 2px solid $primaryColor;
+        color: $primaryColor;
+    }
+}
+
+#poll-question{
+    padding: 5px 15px;
+    width: 450px;
+    font-size: $smallText;
+    resize: none;
+    border: 1px solid $lightGray;
+    border-radius: 5px;
+}
+
+#poll-question:focus{
+    outline: 0;
+    border: 2px solid $primaryColor;
+    color: $primaryColor;
+}
+
+.poll-pannel, .setting-pannel{
+    height: 100vh;
+    flex: 1;
+}
+
+.setting-pannel{
+    padding-left: 100px;
+}
+
+.option-box{
+    width: 530px;
+    padding: 10px 40px 10px 0;
+
+    &--item{
+        width: 450px;
+        padding: 5px 15px 0 15px;
+        border: 1px solid $lightGray;
+        border-radius: 5px;
+        font-size: $smallText;
+    }
+
+    &--button{
+        margin-left: 0px;
+        padding: 3px 6px;
+        border-radius: 50px;
+        color: $white;
+        background-color: $error;
+        border: none;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    &:focus{
+        outline: 0;
+    }
+}
+
+#submitPoll{
+    justify-content: space-evenly;
+}
+
+#backNav{
+    // padding: 5px 0px 5px 120px;
+    padding-left: 120px;
+    background-color: $primaryColor;
+}
+
+#backBtn{
+    padding: 1em;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: $white;
+    font-size: 16px;
+}
+
+.link-share{
+    opacity: 0.5;
+    font-size: 12px;
+    // padding-left: 1em;
+}

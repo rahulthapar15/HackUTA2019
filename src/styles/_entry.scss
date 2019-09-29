@@ -1,0 +1,44 @@
+@import './variables';
+
+.auth{
+    &__container{
+        padding: 2em;
+        text-align: left;
+        margin-top: 30px;
+        max-width: 270px;
+    }
+
+    &__info{
+        font-size: $mediumText/2;
+        opacity: 0.5;
+    }
+
+    &__txtLabel{
+        font-size: $mediumText/2;
+        opacity: 0.5;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__txtInput{
+        width: 250px;
+        padding: 1em;
+        border: 1px solid $lightGray;
+        border-radius: 5px;
+        font-size: $mediumText/2;
+
+        &:focus{
+            outline: 0;
+            color: $primaryColor;
+            border: 2px solid $primaryColor;
+        }
+    }
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+    transition: opacity .3s ease;
+  }
+  .component-fade-enter, .component-fade-leave-to
+  /* .component-fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
